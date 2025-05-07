@@ -1,2 +1,2 @@
 # Applications-of-AI-Machine-Learning-and-Data-Science
-Code for Assignment report work
+Here is all the Code used for Assignment report work

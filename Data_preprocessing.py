@@ -71,30 +71,6 @@ print("Outlier counts (IQR):", outlier_summary)
 print("Train/test shapes:", X_train.shape, X_test.shape)
 print("Churn distribution:\n", df_clean['Churn'].value_counts(normalize=True))
 
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-# Churn distribution
-sns.countplot(x='Churn', data=df_clean)
-plt.title('Churn Class Distribution')
-plt.show()
-
-# Churn rate by contract type
-sns.barplot(x='Contract', y='Churn', data=df_clean)
-plt.title('Churn Rate by Contract Type')
-plt.ylabel('Proportion of Churn')
-plt.show()
-
-# Tenure histogram split by churn
-sns.histplot(data=df_clean, x='tenure', hue='Churn', multiple='stack', bins=30)
-plt.title('Tenure Distribution by Churn')
-plt.show()
-
-# Monthly charges boxplot
-sns.boxplot(x='Churn', y='MonthlyCharges', data=df_clean)
-plt.title('Monthly Charges vs. Churn')
-plt.show()
-
 
 
 
